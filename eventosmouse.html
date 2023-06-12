@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery EVENTOS</title>
+    <script src="jquery-3.6.4.js"></script>
+    <script>
+    $(document).ready(function(){
+        //Click
+        //dbclick
+        //mousedown
+        //mouseover
+        //mouseout
+        $("#div1").click(function(){
+            alert('Elemento foi clicado');
+        });
+        $("#div2").dbclick(function(){
+            alert('Elemento foi clicado 2x');
+        });
+        $("#div3").mousedown(function(){
+            alert('o mouse esta em cima do elemento div');
+        });
+        $("#div4").mouseover(function(){
+            alert('Elemento foi sobreposto pelo mouse');
+        });
+        $("#div5").mouseout(function(){
+            alert('mouse fora do espaco');
+        });
+    });
+    </script>
+</head>
+<body>
+    <div id="div1"style="height: 150px; width: 150px; background: grey;"></div>
+    <div id="div2"style="height: 150px; width: 150px; background: green;"></div>
+    <div id="div3"style="height: 150px; width: 150px; background: red;"></div>
+    <div id="div4"style="height: 150px; width: 150px; background: blue;"></div>
+    <div id="div5"style="height: 150px; width: 150px; background: yellow;"></div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JogodaVeia</title>
+    <script src="jquery-3.6.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jogo.js"></script>
+
+</head>
+<body>
+    <style>
+
+    </style>
+
+        <div id="pagina_inicial" class="table-container">
+            <img src="img/Cenario.PNG" alt="" style="width: 950px; height: 550px;">
+            <table border="0" width="700px">
+                <tbody>
+                    <tr style="left:40px;" align="center">
+                        <td>
+                            <img src="img/P1.png" alt="">
+                            </br>
+                            <input id="apelido_jogador1" type="text " maxlength="10" placeholder="Apelido jogador 1">
+                        </td>
+                        <td>
+                            <img id="btn_iniciar_jogo"src="img/jogar.png" alt="" style="width: 230px; height: 70px;">
+                        </td>
+                        <td>
+                            <img src="img/P2.png" alt="" >
+                        </br>
+                        <input id="apelido_jogador2" type="text " maxlength="10" placeholder="Apelido jogador 2">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+                    <!-- Centralizando a grade da table do jogo da velha -->
+        <div id="palco_jogo" style="margin-top: 50px;text-align: center; display: none">
+            <div style="display: inline-block;">
+                <img src="img/P1.png" alt="">
+            </br>
+                <span id="nome_jogador1"></span>
+            </div>
+                <!--Tabela em Formato Jogo da velha -->
+            <div style="display: inline-block;">
+                <table>
+                <tr>
+                    <!--linhas do jogo da velha -->
+                    <td style="border-bottom:solid  1px black; border-right: solid 1px black;">
+                        <div class="jogada" id="a-1"style="width: 120px; height: 120px;"></div>
+                    </td>
+                    <td style="border-bottom:solid  1px black; border-right: solid 1px black;">
+                        <div class="jogada" id="a-2"style="width: 120px; height: 120px;"></div>
+                    </td>
+                    <td style="border-bottom:solid  1px black;">
+                        <div class="jogada" id="a-3"style="width: 120px; height: 120px;"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:solid  1px black; border-right: solid 1px black;">
+                        <div class="jogada" id="b-1" style="width: 120px; height: 120px;"></div>
+                    </td>
+                    <td style="border-bottom:solid  1px black; border-right: solid 1px black;">
+                        <div class="jogada" id="b-2"style="width: 120px; height: 120px;"></div>
+                    </td>
+                    <td style="border-bottom:solid  1px black;">
+                        <div class="jogada" id="b-3"style="width: 120px; height: 120px;"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-right: solid 1px black;">
+                        <div class="jogada" id="c-1" style="width: 120px; height: 120px;"></div>
+                    </td>
+                    <td style="border-right: solid 1px black;"> 
+                        <div class="jogada" id="c-2" style="width: 120px; height: 120px;"></div>
+                    </td>
+                    <td>
+                        <div class="jogada" id="c-3" style="width: 120px; height: 120px;"></div>
+                    </td>
+                </tr>
+                <!--fim das linhas -->
+            </table>
+            </div>
+            <div style="display: inline-block;">
+                <img src="img/P2.png" alt="">
+            </br>
+                <span id="nome_jogador2"></span>
+            </div>
+        </div>
+</body>
+</html>

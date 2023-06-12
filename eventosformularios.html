@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery EVENTOS Teclado</title>
+    <script src="jquery-3.6.4.js"></script>
+    <script>
+    $(document).ready(function(){
+        //focus elemento recebe o foco
+        //blur elemento perde o foco
+        //change  elemento 
+        $('.campo1').change(function(){
+            alert('elemento foi modificado');
+        })
+
+    });
+    </script>
+</head>
+<body>
+    <select class="campo1"type="text">
+    <option value="1">primeira opcao</option>
+    <option value="2">segunda opcao</option>
+    </select>
+</body>
+</html>

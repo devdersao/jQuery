@@ -1,0 +1,10 @@
+.table-container {
+    margin-left: 16%; /* Ou você pode usar um valor em porcentagem, como 10% */
+
+}
+.jogada{
+    background-image: url(cross.png);
+    background-image: url(zero.png);
+    background-repeat: no-repeat;
+    text-align: center;
+}
